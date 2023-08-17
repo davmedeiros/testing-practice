@@ -10,7 +10,15 @@ const Calculator = () => {
   const add = (x, y) => x + y;
   const subtract = (x, y) => x - y;
 
-  return { add, subtract };
+  const divide = (x, y) => {
+    if (y === 0) {
+      return "Oops! Can't divide by zero";
+    }
+
+    return x / y;
+  };
+
+  return { add, subtract, divide };
 };
 
 const calculator = Calculator();
