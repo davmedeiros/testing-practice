@@ -6,4 +6,12 @@ function reverseString(word) {
   return word.split('').reverse().join('');
 }
 
-export { capitalize, reverseString };
+const Calculator = () => {
+  const add = (x, y) => x + y;
+
+  return { add };
+};
+
+const calculator = Calculator();
+
+export { capitalize, reverseString, calculator };

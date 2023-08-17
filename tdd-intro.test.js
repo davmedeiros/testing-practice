@@ -1,4 +1,4 @@
-import { capitalize, reverseString } from './tdd-intro';
+import { capitalize, reverseString, calculator } from './tdd-intro';
 
 test('"london" becomes "London"', () => {
   expect(capitalize('london')).toBe('London');
