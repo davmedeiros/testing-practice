@@ -1,3 +1,5 @@
+import capitalize from './tdd-intro';
+
 test('"london" becomes "London"', () => {
   expect(capitalize('london')).toBe('London');
 });
