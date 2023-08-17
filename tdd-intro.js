@@ -18,7 +18,8 @@ const Calculator = () => {
     return x / y;
   };
 
-  return { add, subtract, divide };
+  const multiply = (x, y) => x * y;
+  return { add, subtract, divide, multiply };
 };
 
 const calculator = Calculator();
