@@ -1,11 +1,11 @@
-import capitalize from './tdd-intro';
+import { capitalize, reverseString } from './tdd-intro';
 
 test('"london" becomes "London"', () => {
   expect(capitalize('london')).toBe('London');
 });
 
 test('"london" becomes "nodnol"', () => {
-  expect(reverseString('london').toBe('nodnol'));
+  expect(reverseString('london')).toBe('nodnol');
 });
 
 test('3 + 2 equal 5', () => {
