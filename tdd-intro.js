@@ -24,4 +24,30 @@ const Calculator = () => {
 
 const calculator = Calculator();
 
-export { capitalize, reverseString, calculator };
+function caesarCipher(phrase, shiftFactor) {
+  if (shiftFactor < 0) {
+    return caesarCipher(phrase, shiftFactor + 26);
+  }
+
+  var encrypted = '';
+
+  for (var i = 0; i < phrase.length; i++) {
+    var character = phrase[i];
+
+    if (character.match(/[a-z]/i)) {
+      var code = phrase.charCodeAt(i);
+
+      if (code >= 65 && code <= 90) {
+        character = String.fromCharCode(((code - 65 + shiftFactor) % 26) + 65);
+      } else if (code >= 97 && code <= 122) {
+        character = String.fromCharCode(((code - 97 + shiftFactor) % 26) + 97);
+      }
+    }
+
+    encrypted += character;
+  }
+
+  return encrypted;
+}
+
+export { capitalize, reverseString, calculator, caesarCipher };

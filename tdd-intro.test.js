@@ -1,4 +1,9 @@
-import { capitalize, reverseString, calculator } from './tdd-intro';
+import {
+  capitalize,
+  reverseString,
+  calculator,
+  caesarCipher,
+} from './tdd-intro';
 
 test('"london" becomes "London"', () => {
   expect(capitalize('london')).toBe('London');
@@ -25,7 +30,7 @@ test('3 * 2 equal 6', () => {
 });
 
 test('"attack at dawn!" becomes "fyyfhp fy ifbs!"', () => {
-  expect(caesarCipher('attack at dawn', 5)).toBe('fyyfhp fy ifbs!');
+  expect(caesarCipher('attack at dawn!', 5)).toBe('fyyfhp fy ifbs!');
 });
 
 test('returns an object with average, min, max and length', () => {
