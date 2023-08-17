@@ -8,8 +8,9 @@ function reverseString(word) {
 
 const Calculator = () => {
   const add = (x, y) => x + y;
+  const subtract = (x, y) => x - y;
 
-  return { add };
+  return { add, subtract };
 };
 
 const calculator = Calculator();
