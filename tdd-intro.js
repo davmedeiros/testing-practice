@@ -50,4 +50,14 @@ function caesarCipher(phrase, shiftFactor) {
   return encrypted;
 }
 
-export { capitalize, reverseString, calculator, caesarCipher };
+function analyzeArray(array) {
+  const average =
+    array.reduce((result, number) => result + number) / array.length;
+  const min = Math.min(...array);
+  const max = Math.max(...array);
+  const length = array.length;
+
+  return { average, min, max, length };
+}
+
+export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };

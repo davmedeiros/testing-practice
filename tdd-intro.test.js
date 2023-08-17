@@ -3,6 +3,7 @@ import {
   reverseString,
   calculator,
   caesarCipher,
+  analyzeArray,
 } from './tdd-intro';
 
 test('"london" becomes "London"', () => {
